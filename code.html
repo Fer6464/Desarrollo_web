@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tienda </title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#877177",
+                        "on-secondary-container": "#006f69",
+                        "surface-container-low": "#f3f3f4",
+                        "on-background": "#1a1c1c",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#201c00",
+                        "on-primary-fixed-variant": "#81204c",
+                        "on-tertiary-container": "#474119",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#d1c794",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "background": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "outline-variant": "#dac0c6",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4e471f",
+                        "tertiary-fixed": "#eee3ad",
+                        "surface-dim": "#dadada",
+                        "secondary-fixed": "#6ef7ee",
+                        "on-surface-variant": "#544247",
+                        "primary": "#a03964",
+                        "secondary-container": "#6bf5eb",
+                        "inverse-primary": "#ffb0c9",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#781945",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#a03964",
+                        "tertiary": "#665f34",
+                        "on-surface": "#1a1c1c",
+                        "primary-fixed-dim": "#ffb0c9",
+                        "surface-container": "#eeeeee",
+                        "tertiary-container": "#b6ad7b",
+                        "secondary-fixed-dim": "#4cdbd1",
+                        "on-secondary-fixed": "#00201e",
+                        "surface-container-high": "#e8e8e8",
+                        "on-secondary-fixed-variant": "#00504c",
+                        "secondary": "#006a65",
+                        "inverse-surface": "#2f3131",
+                        "primary-container": "#ff85b2",
+                        "surface-bright": "#f9f9f9",
+                        "on-primary-fixed": "#3e001f",
+                        "primary-fixed": "#ffd9e3",
+                        "surface": "#f9f9f9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "64px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "lg": "40px",
+                        "sm": "12px",
+                        "margin-desktop": "48px",
+                        "gutter": "20px",
+                        "md": "24px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "label-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "700" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+</script>
+</head>
+
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-16">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-primary dark:bg-on-primary-container shadow-[0px_4px_12px_rgba(160,57,100,0.15)]">
+<button class="text-on-primary dark:text-primary-fixed hover:bg-on-primary-fixed-variant/20 dark:hover:bg-primary/20 transition-all duration-200 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<div class="text-headline-md font-headline-md font-extrabold text-on-primary dark:text-primary-fixed">
+            Tienda
+        </div>
+<button class="text-on-primary dark:text-primary-fixed hover:bg-on-primary-fixed-variant/20 dark:hover:bg-primary/20 transition-all duration-200 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+</button>
+</header>
+<main class="flex-grow pb-xl px-margin-mobile md:px-margin-desktop pt-md space-y-lg max-w-7xl mx-auto w-full">
+<!-- Featured Section (Bento style) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-base md:gap-gutter bg-primary-container rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(160,57,100,0.15)] ring-1 ring-white/20">
+<div class="relative aspect-square md:aspect-auto md:h-full min-h-[300px]">
+<img alt="Featured merchandise image" class="absolute inset-0 w-full h-full object-cover object-center" data-alt="A vibrant, high-energy anime-style illustration of a cheerful girl with short orange hair, wearing a highly detailed, colorful idol costume with ribbons and frills. The lighting is bright and stage-like, with sparkling particle effects in the background. The overall aesthetic is heavily inspired by high-end gacha game splash art, featuring saturated pinks, teals, and soft whites." src="https://i.ibb.co/zV739J8t/image.png"/>
+</div>
+<div class="p-lg flex flex-col justify-center items-start bg-primary text-on-primary">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-white/20 text-on-primary text-label-sm font-label-sm mb-sm backdrop-blur-sm">Featured Idol</span>
+<h2 class="text-display-lg font-display-lg mb-md leading-tight text-white drop-shadow-md">Featuring: Rin Hoshisora</h2>
+<button class="bg-secondary text-on-secondary px-6 py-3 rounded-full text-label-lg font-label-lg border-b-2 border-secondary-fixed-dim hover:shadow-[0_4px_12px_rgba(0,106,101,0.3)] transition-all duration-200 active:translate-y-px active:border-b-0">
+                    View Collection
+                </button>
+</div>
+</section>
+<!-- Product Grid -->
+<section>
+<div class="flex items-center justify-between mb-md">
+<h3 class="text-headline-lg font-headline-lg text-primary">New Arrivals</h3>
+<button class="text-secondary text-label-lg font-label-lg flex items-center hover:bg-secondary/10 px-3 py-1 rounded-full transition-colors">
+                    View All <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(160,57,100,0.05)] hover:shadow-[0_8px_24px_rgba(160,57,100,0.15)] transition-all duration-300 ring-1 ring-outline-variant/30 group flex flex-col h-full">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-variant">
+<img alt="Umi Sonoda Merchandise" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A premium collectible acrylic stand featuring a graceful anime girl with long blue hair, dressed in an elegant, traditional Japanese-inspired idol outfit with floral motifs. The stand is photographed against a bright, studio-lit white background to emphasize the vibrant blue and gold colors of the outfit. The aesthetic is clean, professional, and merchandise-focused, typical of high-quality anime store listings." src="https://i.ibb.co/KjNCHSwy/image-1.png"/>
+<div class="absolute top-sm right-sm bg-primary/90 backdrop-blur-sm text-on-primary px-2 py-1 rounded-md text-label-sm font-label-sm shadow-sm border border-white/20">
+                            SSR
+                        </div>
+</div>
+<div class="p-sm flex flex-col flex-grow">
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-xs">Umi Sonoda</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mb-sm">Acrylic Stand - Starry Night Ver.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-headline-sm font-headline-sm text-primary">¥2,400</span>
+<button class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(160,57,100,0.05)] hover:shadow-[0_8px_24px_rgba(160,57,100,0.15)] transition-all duration-300 ring-1 ring-outline-variant/30 group flex flex-col h-full">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-variant">
+<img alt="Kotori Minami Merchandise" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A detailed close-up of a collectible anime figure depicting a sweet girl with light grayish-brown hair tied in a side tail, wearing a fluffy, bird-motif idol dress in pastel greens and whites. The figure is displayed in a clean, brightly lit environment that highlights the glossy finish of the dress and the soft pastel color palette. The aesthetic is cute, high-quality, and appealing to collectors." src="https://i.ibb.co/jv6FsgCq/image-2.png"/>
+<div class="absolute top-sm right-sm bg-secondary/90 backdrop-blur-sm text-on-secondary px-2 py-1 rounded-md text-label-sm font-label-sm shadow-sm border border-white/20">
+                            UR
+                        </div>
+</div>
+<div class="p-sm flex flex-col flex-grow">
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-xs">Kotori Minami</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mb-sm">1/7 Scale Figure - Wonder Zone</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-headline-sm font-headline-sm text-primary">¥18,500</span>
+<button class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Extra placeholder cards to fill grid -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(160,57,100,0.05)] hover:shadow-[0_8px_24px_rgba(160,57,100,0.15)] transition-all duration-300 ring-1 ring-outline-variant/30 group flex flex-col h-full opacity-50 grayscale hover:grayscale-0 hover:opacity-100">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-display-lg text-outline">image</span>
+</div>
+<div class="p-sm flex flex-col flex-grow">
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-xs">Mystery Item</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mb-sm">Coming Soon</p>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(160,57,100,0.05)] hover:shadow-[0_8px_24px_rgba(160,57,100,0.15)] transition-all duration-300 ring-1 ring-outline-variant/30 group flex flex-col h-full opacity-50 grayscale hover:grayscale-0 hover:opacity-100">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-display-lg text-outline">image</span>
+</div>
+<div class="p-sm flex flex-col flex-grow">
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-xs">Mystery Item</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mb-sm">Coming Soon</p>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-xl px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-gutter bg-surface-container-highest dark:bg-surface-dim border-t border-outline-variant/30">
+<div class="text-label-lg font-label-lg font-bold text-primary dark:text-primary-fixed-dim">
+            Tienda
+        </div>
+<div class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface">
+            Created with Stitch • Model v1.0 • Prompted by: Fer
+        </div>
+<nav class="flex gap-md">
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">New Arrivals</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Collections</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Support</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Contact</a>
+</nav>
+</footer>
+</body></html>
